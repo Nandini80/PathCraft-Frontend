@@ -1,12 +1,54 @@
-# React + Vite
+# PathCraft Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PathCraft is a travel itinerary management platform where users can explore, create, and manage their travel itineraries. The frontend of PathCraft provides a smooth and user-friendly interface for discovering curated itineraries, searching for destinations, and creating custom travel plans.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Explore itineraries**: Browse a wide variety of travel itineraries based on regions and duration.
+- **Search**: Easily search for itineraries using keywords or filters like region, duration, and more.
+- **Create your itinerary**: Plan your custom trip with personalized itineraries.
+- **Edit and Delete itineraries**: Edit or remove itineraries you no longer need.
+- **Responsive design**: The app is fully responsive, making it accessible on all devices.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js**: JavaScript library for building user interfaces.
+- **Vite**: Next-generation frontend tool that offers a faster build and development experience.
+- **Axios**: Promise-based HTTP client for making API requests.
+- **React Router**: Routing library for navigation in React applications.
+- **Lucide Icons**: Lightweight icon library for React.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+
+## Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/PathCraft-Frontend.git
+cd PathCraft-Frontend
+```
+Install dependencies
+Ensure you have Node.js installed. If not, download and install it from here.
+
+Run the following command to install all required dependencies:
+
+```bash
+npm install
+```
+
+Start the development server
+Once the dependencies are installed, you can start the development server:
+
+```bash
+npm run dev
+```
+
+Visit http://localhost:3000 in your browser to see the app in action.
+
+### Key Sections to Customize:
+1. **Project Overview**: Briefly explain the project and what it does.
+2. **Tech Stack**: List the technologies used in the project.
+3. **Installation Instructions**: Step-by-step guide on how to set up the project on a local machine.
+4. **Contributing**: Guidelines for other developers to contribute to the project.
+5. **License**: Mention the license under which the project is made available. (If you don't have one, you can use the MIT License as an example).
+6. **Contact Information**: Provide a way to reach you for any questions.
