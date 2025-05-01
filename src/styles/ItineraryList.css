@@ -1,0 +1,217 @@
+/* ItineraryList.css */
+
+.itinerary-list-container {
+    padding: 1rem 0;
+  }
+  
+  .search-section {
+    margin-bottom: 2rem;
+  }
+  
+  .search-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-input-container {
+    position: relative;
+    flex: 1;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 0.875rem;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .filter-toggle,
+  .filter-reset {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .filter-toggle:hover,
+  .filter-reset:hover {
+    color: var(--primary-color);
+  }
+  
+  .filters-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filter-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .filter-group select {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 0.875rem;
+  }
+  
+  .itineraries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .itinerary-card {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .itinerary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .itinerary-card-image {
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .itinerary-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .itinerary-card:hover .itinerary-card-image img {
+    transform: scale(1.05);
+  }
+  
+  .itinerary-card-content {
+    padding: 1.25rem;
+  }
+  
+  .itinerary-card-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+  }
+  
+  .itinerary-card-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--text-light);
+    font-size: 0.75rem;
+  }
+  
+  .itinerary-card-description {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .itinerary-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .no-results {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .no-results h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .no-results p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+  }
+  
+  .create-itinerary-cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .create-itinerary-cta h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .create-itinerary-cta p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .search-form {
+      flex-direction: column;
+    }
+  
+    .itineraries-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

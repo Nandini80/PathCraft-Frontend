@@ -1,0 +1,129 @@
+/* Footer.css */
+
+.footer {
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    padding: 3rem 1rem 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-brand {
+    max-width: 300px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .footer-tagline {
+    color: var(--text-light);
+    font-size: 0.875rem;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer-links-column h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  .footer-links-column ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links-column ul li a {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    transition: var(--transition);
+  }
+  
+  .footer-links-column ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer-contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-light);
+    font-size: 0.875rem;
+  }
+  
+  .footer-contact-info li svg {
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    gap: 1rem;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--background-alt);
+    color: var(--text-light);
+    transition: var(--transition);
+  }
+  
+  .footer-social a:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .footer-copyright {
+    color: var(--text-light);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-top {
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .footer-bottom {
+      flex-direction: row;
+    }
+  }
+  
