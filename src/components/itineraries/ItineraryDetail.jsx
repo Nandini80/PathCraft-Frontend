@@ -95,7 +95,7 @@ const ItineraryDetail = () => {
           )}
         </div>
         <div className="header-actions">
-          <button className="btn btn-primary">Book This Trip</button>
+          {/* <button className="btn btn-primary">Book This Trip</button> */}
           <Link to={`/edit-itinerary/${itinerary.id}`} className="btn btn-secondary">
             Edit Itinerary
           </Link>
@@ -223,7 +223,7 @@ const ItineraryDetail = () => {
         <Link to="/" className="btn btn-secondary">
           Back to Itineraries
         </Link>
-        <button className="btn btn-primary">Book This Trip</button>
+        {/* <button className="btn btn-primary">Book This Trip</button> */}
       </div>
     </div>
   )
