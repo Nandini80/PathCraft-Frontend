@@ -106,12 +106,12 @@ const Recommendation = () => {
             </span>
           </div>
         </div>
-
+{/* 
         <div className="display-controls">
           <button className="display-toggle" onClick={() => setHideImages(!hideImages)}>
             {hideImages ? "Show Images" : "Hide Images"}
           </button>
-        </div>
+        </div> */}
 
         {showFilters && (
           <div className="filters-form">
@@ -170,10 +170,10 @@ const Recommendation = () => {
             <div key={itinerary.id} className="itinerary-card">
               {!hideImages && (
                 <div className="itinerary-card-image">
-                  <img
+                  {/* <img
                     src={`https://source.unsplash.com/random/300x200/?${itinerary.region.toLowerCase()},travel&sig=${itinerary.id}`}
                     alt={itinerary.name}
-                  />
+                  /> */}
                   {itinerary.is_recommended && (
                     <div className="recommended-badge">
                       <Award size={14} />
@@ -231,10 +231,10 @@ const Recommendation = () => {
               <div key={`popular-${itinerary.id}`} className="itinerary-card">
                 {!hideImages && (
                   <div className="itinerary-card-image">
-                    <img
+                    {/* <img
                       src={`https://source.unsplash.com/random/300x200/?${itinerary.region.toLowerCase()},travel&sig=${itinerary.id}-popular`}
                       alt={itinerary.name}
-                    />
+                    /> */}
                     <div className="popular-badge">
                       <Award size={14} />
                       <span>Popular</span>

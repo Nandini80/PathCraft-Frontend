@@ -52,16 +52,16 @@ const Footer = () => {
               <h4>Company</h4>
               <ul>
                 <li>
-                  <Link to="/about">About Us</Link>
+                  <Link to="/">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/">Contact</Link>
                 </li>
                 <li>
-                  <Link to="/privacy">Privacy Policy</Link>
+                  <Link to="/">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="/terms">Terms of Service</Link>
+                  <Link to="/">Terms of Service</Link>
                 </li>
               </ul>
             </div>
@@ -71,7 +71,7 @@ const Footer = () => {
               <ul className="footer-contact-info">
                 <li>
                   <MapPin size={16} />
-                  <span>123 Travel Street, Bangkok, Thailand</span>
+                  <span>Noida, UttarPradesh, India</span>
                 </li>
                 <li>
                   <Mail size={16} />
@@ -79,7 +79,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Phone size={16} />
-                  <a href="tel:+6612345678">+66 123 456 78</a>
+                  <a href="tel:8054821129">+91 8054821129</a>
                 </li>
               </ul>
             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <div className="footer-social">
+          {/* <div className="footer-social">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <Facebook size={20} />
             </a>
@@ -97,7 +97,7 @@ const Footer = () => {
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <Instagram size={20} />
             </a>
-          </div>
+          </div> */}
           <div className="footer-copyright">
             <p>&copy; {currentYear} PathCraft. All rights reserved.</p>
           </div>

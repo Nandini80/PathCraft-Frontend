@@ -136,11 +136,11 @@ const ItineraryList = () => {
             </button>
           ) : null}
         </div>
-        <div className="display-controls">
+        {/* <div className="display-controls">
           <button className="display-toggle" onClick={() => setHideImages(!hideImages)}>
             {hideImages ? "Show Images" : "Hide Images"}
           </button>
-        </div>
+        </div> */}
       </div>
 
       {showFilters && (
