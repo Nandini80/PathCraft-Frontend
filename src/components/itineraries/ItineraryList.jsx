@@ -106,7 +106,7 @@ const ItineraryList = () => {
       </div>
 
       <div className="search-section">
-        <form onSubmit={handleSearch} className="search-form">
+        {/* <form onSubmit={handleSearch} className="search-form">
           <div className="search-input-container">
             <Search size={18} className="search-icon" />
             <input
@@ -121,7 +121,7 @@ const ItineraryList = () => {
           <button type="submit" className="btn btn-primary">
             Search
           </button>
-        </form>
+        </form> */}
 
         <div className="filter-controls">
           <button className="filter-toggle" onClick={toggleFilters}>
